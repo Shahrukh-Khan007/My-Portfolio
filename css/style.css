@@ -1,0 +1,379 @@
+/* ===============================
+   Global CSS Reset & Basic Styling
+================================ */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7fa;
+    color: #333333;
+    line-height: 1.6;
+}
+
+
+/* ===============================
+   Navigation Bar Styling
+   (CSS Box Model Applied)
+================================ */
+
+.navbar{
+    background-color: #1f2937;
+    color: white;
+    padding: 20px 50px;          /* Space inside the navbar */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #2563eb; /* Border property */
+}
+
+.logo{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px; /* Box Model padding */
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active{
+    background-color: #2563eb;
+}
+
+
+/* ===============================
+   Hero Section
+================================ */
+
+.hero{
+    height: 85vh;
+    background: linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    ),
+    url("https://i.ytimg.com/vi/2CV224SDL10/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBrQCmreELVpdOlOwT10pFXGUvqdw");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content{
+    color: white;
+    max-width: 700px;
+}
+
+.hero h2{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hero p{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn{
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background-color: #1e40af;
+}
+
+
+/* ===============================
+   General Sections
+================================ */
+
+section{
+    padding: 60px 10%;
+}
+
+h2{
+    font-size: 35px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p{
+    margin-bottom: 15px;
+}
+
+
+/* ===============================
+   About Page
+================================ */
+
+.about-section{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-image img{
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 4px solid #2563eb;
+}
+
+.about-content{
+    flex: 1;
+}
+
+
+/* ===============================
+   Projects Page
+================================ */
+
+.projects{
+    text-align: center;
+}
+
+.project-card{
+    background-color: white;
+    margin: 30px auto;
+    padding: 25px;
+    width: 80%;
+
+    /* Box Model Properties */
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+
+    box-shadow:
+        0 5px 15px rgba(0,0,0,0.15);
+}
+
+.project-card img{
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    margin: 15px 0;
+    border-radius: 10px;
+}
+
+.project-card:hover{
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+
+/* ===============================
+   Skills Page
+================================ */
+
+.skill-category{
+    background-color: white;
+    margin: 25px auto;
+    padding: 25px;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow:
+        0 3px 10px rgba(0,0,0,0.1);
+}
+
+.skill-category ul{
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+
+/* ===============================
+   Contact Page
+   (Most Important)
+================================ */
+
+.contact-section{
+    text-align: center;
+}
+
+.contact-info{
+    background-color: white;
+    width: 60%;
+    margin: 25px auto;
+    padding: 25px;
+
+    /* CSS Box Model */
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+}
+
+.contact-info a{
+    color: #2563eb;
+    text-decoration: none;
+}
+
+
+/* Contact Form Styling */
+
+.contact-section form{
+
+    display: flex;
+    flex-direction: column;
+
+    max-width: 600px;
+    margin: 0 auto;
+    gap: 12px;
+}
+
+
+.contact-section input,
+.contact-section textarea{
+
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+.contact-section input:focus,
+.contact-section textarea:focus{
+
+    border-color: #2563eb;
+    outline: none;
+}
+
+
+.contact-section button{
+
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.contact-section button:hover{
+
+    background-color: #1e40af;
+}
+
+
+/* ===============================
+   Footer
+================================ */
+
+footer{
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* ===============================
+   Responsive Design
+================================ */
+
+@media(max-width: 768px){
+
+    .navbar{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h2{
+        font-size: 32px;
+    }
+
+    .about-section{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-card,
+    .skill-category,
+    .contact-info{
+        width: 95%;
+    }
+
+}
+/* ===============================
+   Education Page
+================================ */
+
+.education-card {
+
+    background-color: white;
+
+    width: 80%;
+
+    margin: 25px auto;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    border: 1px solid #dddddd;
+
+    box-shadow:
+        0 5px 15px rgba(0,0,0,0.1);
+
+}
+
+
+.education-card h3 {
+
+    color: #2563eb;
+
+    margin-bottom: 10px;
+
+}
+.education-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.education-table th,
+.education-table td {
+    border: 1px solid #cccccc;
+    padding: 12px;
+    text-align: left;
+}
+
+.education-table th {
+    background-color: #2563eb;
+    color: white;
+}
+
+.education-table tr:hover {
+    background-color: #f1f5f9;
+}
